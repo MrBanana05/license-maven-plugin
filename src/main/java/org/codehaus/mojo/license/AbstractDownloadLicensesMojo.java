@@ -420,7 +420,7 @@ public abstract class AbstractDownloadLicensesMojo extends AbstractLicensesXmlMo
     /**
      * The Maven session, used to resolve {@link #serverId} credentials from {@code settings.xml}.
      *
-     * @since 2.6.1
+     * @since 2.8.0
      */
     @Parameter(defaultValue = "${session}", readonly = true)
     private MavenSession session;
@@ -433,7 +433,7 @@ public abstract class AbstractDownloadLicensesMojo extends AbstractLicensesXmlMo
      * <p>Credentials are only sent to URLs that start with {@link #serverUrl}, preventing
      * accidental credential leakage to third-party license servers.
      *
-     * @since 2.6.1
+     * @since 2.8.0
      */
     @Parameter(property = "license.serverId", defaultValue = "")
     private String serverId;
@@ -448,7 +448,7 @@ public abstract class AbstractDownloadLicensesMojo extends AbstractLicensesXmlMo
      *
      * <p>Example: {@code https://artifactory.example.com/artifactory}
      *
-     * @since 2.6.1
+     * @since 2.8.0
      */
     @Parameter(property = "license.serverUrl", defaultValue = "")
     private String serverUrl;
